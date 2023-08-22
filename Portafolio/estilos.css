@@ -1,0 +1,822 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgba(246, 220, 215, 0.8);
+}
+.whatsapp-button {
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    background-color: #25D366;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    margin-right: 20px;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.whatsapp-icon {
+    width: 40px;
+    height: 40px;
+    fill: white;
+}
+button {
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-right: -100px;
+    margin-top: 200px;
+}
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Usar porcentaje para ser más responsivo */
+    height: 100vh; /* Usar viewport height */
+    overflow: hidden;
+}
+
+#video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Usar porcentaje para ser más responsivo */
+    height: 100%; /* Usar porcentaje para ser más responsivo */
+    object-fit: cover;
+    z-index: -1;
+}
+/* Media queries para estilos responsive */
+/* Estilos generales aquí */
+
+/* Media queries para dispositivos pequeños */
+@media (max-width: 768px) {
+    /* Estilos específicos para pantallas pequeñas */
+}
+
+/* Media queries para dispositivos medianos */
+@media (min-width: 769px) and (max-width: 1200px) {
+    /* Estilos específicos para pantallas medianas */
+}
+
+/* Media queries para dispositivos grandes */
+@media (min-width: 1201px) {
+    /* Estilos específicos para pantallas grandes */
+}
+
+/* video2 */
+.video-container2 {
+    position: absolute;
+    top: 1220px;
+    left: 0;
+    width: 110%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#video-background2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150%;
+    height: 110%;/* Cambia esto a auto en lugar de 100% */
+    object-fit: cover;
+    z-index: -1;
+}
+/* video3 */
+.video-container3 {
+    position: absolute;
+    top: 1968px;
+    left: 0;
+    width: 110%;
+    height: 125vh;
+    overflow: hidden;
+}
+
+#video-background3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150%;
+    height: 110%;/* Cambia esto a auto en lugar de 100% */
+    object-fit: cover;
+    z-index: -1;
+}
+/* video4 */
+.video-container4 {
+    position: absolute;
+    top: 2929px;
+    left: 0;
+    width: 110%;
+    height: 90vh;
+    overflow: hidden;
+}
+
+#video-background4 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150%;
+    height: 110%;/* Cambia esto a auto en lugar de 100% */
+    object-fit: cover;
+    z-index: -1;
+}
+.content {
+    position: relative;
+    z-index: 1;
+    /* Estilos para el contenido sobre el video */
+}
+
+header {
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    height: 53px; /* Ajusta la altura deseada */
+    top: 0;
+    left: 0;
+    z-index: 999;
+    border-radius: 0 0 50% 50%;
+    transform: translateY(-20px); /* Ajusta el valor para la gota recortada */
+}
+
+
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    background-color: transparent;
+}
+/* Add some space below the header so content doesn't get hidden under it */
+#inicio {
+    padding-top: 80px;
+    color: #ffc107;
+}
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffc107;
+}
+
+
+
+/* Style for the sections */
+section {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+
+}
+/* Bienvenida */
+/* Estilo para el título de bienvenida */
+.bienvenido {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center; /* Centrar el texto */
+    margin-top: 0px; /* Espacio superior para centrar */
+    text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.3);
+}
+/* Estilo para el nombre y profesión */
+.nombre-profesion {
+    font-size: 3rem;
+    text-transform: initial;
+    color: #fff;
+    text-align: center; /* Centrar el texto */
+    margin-top: 2%; /* Espacio superior para separación */
+}
+
+/* Estilo para el nombre */
+.nombre {
+    font-size: 2rem;
+    color: #763cac; /* Color morado */
+    font-weight: bold; /* Texto en negrita */
+}
+
+/* Estilo para la descripción */
+.descripcion {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.7);
+    text-align: center; /* Centrar el texto */
+    margin-top: 2%; /* Espacio superior para separación */
+}
+
+/* Contenido */
+.foto {
+    flex: 1;
+    padding: 2%;
+    border-radius: 50%;
+}
+
+/* Estilo para el contenido de texto */
+.contenido {
+    flex: 2;
+    padding: 2%;
+}
+
+/* Estilo para el título */
+.titulo {
+    font-size: 1.5rem;
+    margin-bottom: 1%;
+    color: #020202;
+    text-align: justify;
+    text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.3);
+    font-family: Georgia, serif; /* Usar la fuente Georgia */
+}
+
+
+/* Animación para la aparición desde la izquierda */
+
+
+/* Estilo para el contenedor del periódico con animación */
+.periodico {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    backdrop-filter: blur(1000px); /* Ajusta el valor para el efecto de desenfoque */
+    /* background-color: rgba(233, 184, 172, 0.8); */
+    background-color: rgba(246, 220, 215, 0.8);
+
+}
+
+/* Estilo para la foto */
+.foto {
+    flex: 0.5;
+    padding: 1px;
+    text-align: center; /* Centrar la imagen horizontalmente */
+}
+
+.foto img {
+    max-width: 140%; /* Ajustar el tamaño máximo de la imagen */
+    height: 400px; /* Mantener la proporción de aspecto */
+    display: block; /* Eliminar espacio vacío debajo de la imagen */
+    margin: 0 auto; /* Centrar verticalmente */
+    margin-top: 20px; /* Espacio superior */
+    border-radius: 20%;
+
+}
+.foto::before {
+    content: ""; /* Contenido pseudo-elemento */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 120%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(4, 4, 4, 0), rgba(250, 206, 206, 0.34)); /* Degradado desde transparente hasta blanco */
+    z-index: 1; /* Colocar el degradado por encima de la imagen */
+}
+/* Estilo para el contenido de texto */
+.contenido {
+    flex: 2;
+    padding: 10px;
+}
+
+/* Estilo para el título */
+.titulo {
+    font-size: 1.45rem;
+    margin-bottom: 10px;
+    margin-left: 130px;
+    margin-right: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* Animación para reiniciar la animación */
+.Titulo_certificaciones {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: #280235;
+    text-align: justify;
+    text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.3);
+    margin-top: 100px;
+    margin-left: 250px;
+}
+.Certificado1 {
+    max-width: 45%; /* Ajustar el tamaño máximo de la imagen */
+    height: 300px; /* Mantener la proporción de aspecto */
+    display: inline-block;
+    margin: 100px 10px 0 10px;
+    vertical-align: top; /* Alinear en la parte superior */
+}
+
+.Certificado2 {
+    max-width: 45%; /* Ajustar el tamaño máximo de la imagen */
+    height: 300px; /* Mantener la proporción de aspecto */
+    display: inline-block;
+    margin: 100px 10px 0 10px;
+    vertical-align: top; /* Alinear en la parte superior */
+}
+.fondo2 {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin-top: 40px;
+    backdrop-filter: blur(1000px); /* Ajusta el valor para el efecto de desenfoque */
+    background: linear-gradient(to bottom, #e7e4f1, #e6a7f6); /* Degradado vertical entre #e7e4f1 y #e0d7ff */
+}
+.fondo3 {
+    display: flex;
+
+    padding: 20px;
+    margin-right: 2100px;
+    margin-top: -320px;
+    width: 2000px;
+    backdrop-filter: blur(1000px); /* Ajusta el valor para el efecto de desenfoque */
+    background: linear-gradient(to bottom, #e7e4f1, #e6a7f6); /* Degradado vertical entre #e7e4f1 y #e0d7ff */
+}
+.experiencia {
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    color: #280235;
+    margin-top: -100px; /* Ajusta la distancia entre el título y la línea */
+    margin-left: 20px; /* Ajusta el margen izquierdo del título */
+    text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.3);
+    display: inline-block;
+    position: relative;
+}
+.experiencia:after{
+    content: '';
+    position: absolute;
+    margin-right: 200px;
+    width: 100%;
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    background-color:rgb(141, 232, 246);
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.9s ease-out;
+}
+.experiencia:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+.Imagen_inmobiliaria{
+    max-width: 100%; /* Ajustar el tamaño máximo de la imagen */
+    height: 250px; /* Mantener la proporción de aspecto */
+    margin-left: 410px;
+    border-radius: 50%;
+
+ /* Ajusta la distancia entre el título y el título anterior */
+
+}
+.empresa {
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    color: #030303;
+    margin-top: -400px; /* Ajusta la distancia entre el título y el título anterior */
+    margin-left: 445px; /* Ajusta el margen izquierdo del título */
+    text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.3);
+}
+.Año{
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #ffffff;
+
+    margin-left: 495px; /* Ajusta el margen izquierdo del título */
+    text-shadow: 2px 2px 3px rgba(247, 62, 62, 0.3);
+}
+.Sombre_empresa{
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-align: center;
+    margin-left: 20px; /* Ajusta el margen izquierdo del título */
+    text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.3);
+}
+/* umng */
+.Imagen_umng{
+    max-width: 100%; /* Ajustar el tamaño máximo de la imagen */
+    height: 250px; /* Mantener la proporción de aspecto */
+    margin-left: 340px;
+    border-radius: 50%;
+
+ /* Ajusta la distancia entre el título y el título anterior */
+
+}
+.UMNG {
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    color: #000;
+    margin-top: 90px; /* Ajusta la distancia entre el título y el título anterior */
+    margin-left: 260px; /* Ajusta el margen izquierdo del título */
+    text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.3);
+}
+.Año2{
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #f0f0f0;
+
+    margin-left: 395px; /* Ajusta el margen izquierdo del título */
+    text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.3);
+}
+.Sombre_umng{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: #fbfbfbfe;
+    text-align: center;
+    margin-left: 20px; /* Ajusta el margen izquierdo del título */
+    text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.3);
+}
+
+.caja-padre{
+
+    width: 40%;
+    min-width: 590px;
+    /* position: absolute; */
+    transform: translate(-50%,-50%);
+    margin-top: 300px;
+    left: 50%;
+    background-color: #f7f7f7;
+
+   
+}
+.Contenedor{
+    width: 100%;
+    padding: 30px 30px 50px;
+    background: 2px solid rgba(255, 255, 255, 0.6);
+    border-radius: 10px;
+    box-shadow: 0 20px 30px rgba(2, 2, 2, 0.315);
+    backdrop-filter: blur(190px);
+
+}
+.Contenedor *{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+}
+h2{
+    margin-bottom: 50px;
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 34 px;
+    font-weight: bold;
+}
+.habilidades:not(:last-child){
+    margin-bottom: 30px;
+}
+.detalles{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+
+}
+.menu{
+    position: relative;
+    border: 1px solid rgb(15, 15, 15);
+    border-radius: 20px;
+}
+.menu div{
+    position: relative;
+    width: 0;
+    height: 8px;
+    border-radius: 10px;
+    background-color: rgb(146, 192, 233);
+}
+#HTML-Menu{
+    animation: html-barra 2s forwards;
+}
+@keyframes html-barra{
+    100%{
+        width: 90%;
+    }
+}
+#CSS-Menu{
+    animation: CSS-barra 2s forwards;
+}
+@keyframes CSS-barra{
+    100%{
+        width: 70%;
+    }
+}
+
+#JS-Menu{
+    animation: JS-barra 2s forwards;
+}
+@keyframes JS-barra{
+    100%{
+        width: 65%;
+    }
+}
+#MONGO-Menu{
+    animation: MONGO-barra 2s forwards;
+}
+@keyframes MONGO-barra{
+    100%{
+        width: 53%;
+    }
+}
+
+#PY-Menu{
+    animation: PY-barra 2s forwards;
+}
+@keyframes PY-barra{
+    100%{
+        width: 72%;
+    }
+}
+
+#MATL-Menu{
+    animation: MATL-barra 2s forwards;
+}
+@keyframes MATL-barra{
+    100%{
+        width: 85%;
+    }
+}
+/* lenguaje */
+
+.caja-padre2{
+    width: 40%;
+    min-width: 590px;
+    /* position: absolute; */
+    transform: translate(-50%,-50%);
+    margin-top: 800px;
+    left: 50%;
+    background-color: #f8f8f8;
+   
+}
+
+.Contenedor2{
+    width: 100%;
+    padding: 30px 30px 50px;
+    background: 2px solid rgba(124, 122, 122, 0.6);
+    border-radius: 10px;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(200px);
+}
+.Contenedor2 *{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+}
+.habilidades2:not(:last-child){
+    margin-bottom: 30px;
+}
+.detalles2{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+
+}
+.menu2{
+    position: relative;
+    border: 1px solid rgb(15, 15, 15);
+    border-radius: 20px;
+}
+.menu2 div{
+    position: relative;
+    width: 0;
+    height: 8px;
+    border-radius: 10px;
+    background-color: rgb(192, 253, 173);
+}
+#Listening-Menu{
+    animation: Listening-barra 2s forwards;
+}
+@keyframes Listening-barra{
+    100%{
+        width: 55%;
+    }
+}
+#speaking-Menu{
+    animation: speaking-barra 2s forwards;
+}
+@keyframes speaking-barra{
+    100%{
+        width: 60%;
+    }
+}
+
+#Writing-Menu{
+    animation: Writing-barra 2s forwards;
+}
+@keyframes Writing-barra{
+    100%{
+        width: 50%;
+    }
+}
+
+#Reading-Menu{
+    animation: Reading-barra 2s forwards;
+}
+
+@keyframes Reading-barra{
+    100%{
+        width: 62%;
+    }
+}
+#nivel-Menu{
+    animation: nivel-barra 2s forwards;
+}
+@keyframes nivel-barra{
+    100%{
+        width: 100%;
+    }
+}
+h3{
+    margin-bottom: 50px;
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 34 px;
+    font-weight: bold;
+}
+.proyectos{
+    margin-top: 500px;
+    margin-left: 670px;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 1500px;
+    margin-left: -850px;
+}
+
+.imagen {
+    border-radius: 20px;
+    overflow: hidden;
+    flex: 1;
+    transition: transform 0.3s, box-shadow 0.3s; /* Agrega transición a la sombra */
+    position: relative;
+    animation: wave 2s infinite alternate;
+    box-shadow: 0px 4px 8px rgb(0, 0, 0); /* Agrega una sombra suave */
+}
+
+.imagen img {
+    max-width: 100%;
+    height: 400px;
+}
+
+.descripcion {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 5px;
+    margin: 0;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.imagen:hover .descripcion {
+    opacity: 1;
+}
+
+/* Definición de la animación de ondulación */
+@keyframes wave {
+    0% {
+        transform: translateX(0) translateY(0);
+    }
+    100% {
+        transform: translateX(0) translateY(-5px);
+    }
+}
+
+/* contacto */
+/* Estilos para la sección de contacto */
+#contacto {
+    background-color: #212020;
+    padding: 40px 0;
+    text-align: center;
+    margin-top: 1010px;
+}
+
+#contacto h2 {
+    font-size: 3rem;
+    color: #31d1e7;
+    margin-top: -500px;
+
+}
+
+.info-contacto {
+    margin-top: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contacto-item {
+    flex: 1;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(70, 29, 232, 0.958);
+    margin-right: 20px
+}
+.Titulo_edu{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: #280235;
+    margin-top: 200px; /* Ajusta la distancia entre el título y la línea */
+    margin-left: 410px; /* Ajusta el margen izquierdo del título */
+    text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.3);
+    display: inline-block;
+    position: relative;
+}
+.contacto-item img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.contacto-item p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Estilos para el formulario de contacto */
+.formulario-contacto {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.formulario-contacto label {
+    font-size: 1.2rem;
+    display: block;
+    margin-bottom: 5px;
+    color: #54afdd;
+}
+
+.formulario-contacto input, .formulario-contacto textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.formulario-contacto button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* Agrega estos estilos para la ondulación de las imágenes */
+.info-contacto {
+    transition: transform 0.3s ease-in-out;
+    margin-right: 3500px;
+
+}
+
+.info-contacto:hover {
+    transform: scale(1.3);
+
+}
+.Contacto2{
+    margin-left: 3200px;
+}
+
+
+ /* Estilos para el desplegable */
+ .descripcion {
+    max-width: 0;
+    overflow: hidden;
+    transition: max-width 0.3s ease-in-out;
+    position: absolute;
+    left: -100%; /* Empieza oculto fuera de la pantalla */
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px;
+    text-align: justify;
+}
+
+.descripcion.activo {
+    max-width: 300px; /* Ancho deseado del desplegable */
+    left: 0; /* Muestra el desplegable */
+}
